@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    font-size: 1rem;
+    background-color: black;
+}
+/* navbar changes */
+.navbar {
+    height: 90px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-logo {
+    height: 80px; /* Adjust the height to your preference */
+    width: 80px; /* Adjust the width to your preference */
+    margin-right: 20px; /* Add margin-right to create space between logo and feed */
+}
+.logo {
+    background-image: url(ech0.png);
+    background-size: cover; /* Adjusted to fit the container */
+    background-repeat: no-repeat; /* Prevent repeating the background */
+    height: 100%; /* Make the logo fill the container height */
+    width: 100%; /* Make the logo fill the container width */
+    margin: 0; /* Adjusted to remove margin */
+    padding: 0; /* Adjusted to remove padding */
+}
+
+.nav-logo:hover {
+    border: 1.5px solid #eceef0; /* Add border to logo when hovered */
+}
+
+.navbar .border:hover {
+    border-color: transparent; /* Remove border when other elements are hovered */
+}
+
+.navbar .border {
+    border: 1.5px solid transparent; /* Set initial border to transparent for all elements */
+}
+
+/* Add border to navbar elements when hovered */
+.navbar .border:hover {
+    border-color: white; /* Change border color to white when hovered */
+}
+.home {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.nav-home {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.nav-home i {
+    margin-right: 5px; /* Add margin to the right of the home icon */
+}
+
+.nav-podcast {
+    color: aliceblue;
+    text-decoration: none;
+    width: 50%;
+    padding: 5px;
+}
+
+.nav-podcast:hover {
+    border: 1.5px solid white; /* Border color changes to white on hover */
+    border-radius: 5px; /* Add border radius to match the shape of the text and icon */
+    padding: 4px; /* Adjust padding to maintain spacing */
+}
+
+.nav-search {
+    display: flex;
+    background-color: #4c5353;
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    margin: 10px;
+}
+
+.search-icon {
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    background-color: black; /* Set background color of search icon to black */
+    color: white; /* Set icon color to white */
+    border-top-left-radius: 5px; /* Add border radius to match search input */
+    border-bottom-left-radius: 5px; /* Add border radius to match search input */
+}
+
+.search-input {
+    width: calc(100% - 60px); /* Adjust width to accommodate search icon */
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Set border to grey */
+    border-top-right-radius: 5px; /* Add border radius */
+    border-bottom-right-radius: 5px; /* Add border radius */
+}
+.search-input:focus {
+    color: orange;
+}
+.nav-search:hover {
+    border: 2px solid black;
+}
+
+.nav-account {
+    justify-content: flex-end;
+    align-items: right;
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+}
+/*  your music section */
+.container {
+    display: flex;
+    height: calc(100vh - 90px); /* Adjusted to fit the remaining vertical space after the navbar */
+}
+
+
+.menu {
+    width: 20%; /* Set menu width */
+    background-color: black; /* Set menu background color */
+    padding: 20px; /* Add padding to menu */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: space-between; /* Distribute space evenly between items */
+}
+
+.menu > * {
+    flex: 1; /* This makes each menu item take up equal space vertically */
+}
+.menu a {
+    color: white; /* Set default font color to white for links */
+    text-decoration: none; /* Remove text decoration for links */
+}
+.menu-feed:hover a,
+.menu-feed:hover i {
+    color: orange; /* Change color to orange when menu-feed is hovered over */
+}
+
+.menu-playlist:hover a,
+.menu-playlist:hover i {
+    color: orange; /* Change color to orange when menu-playlist is hovered over */
+}
+
+.menu-favs:hover a,
+.menu-favs:hover i {
+    color: orange; /* Change color to orange when menu-favs is hovered over */
+}
+
+.menu-disc:hover a,
+.menu-disc:hover i {
+    color: orange; /* Change color to orange when menu-disc is hovered over */
+}
+
+
+.menu-feed {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    
+    text-align: left;
+}
+.menu-playlist {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    
+    text-align: left;
+
+} 
+ 
+.menu-favs {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    
+    text-align: left;
+
+} 
+ 
+.menu-disc {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    
+    text-align: left;
+
+} 
+.menu-new-playlist {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.menu-new-playlist i {
+    margin-right: 5px; /* Add margin to the right of the icon */
+}
+
+.menu-feed:hover a,
+.menu-feed:hover i,
+.menu-playlist:hover a,
+.menu-playlist:hover i,
+.menu-favs:hover a,
+.menu-favs:hover i,
+.menu-disc:hover a,
+.menu-disc:hover i,
+.menu-new-playlist:hover a,
+.menu-new-playlist:hover i {
+    color: orange; /* Change text and icon color to orange on hover */
+}
+
+.menu-new-playlist a {
+    color: white; /* Set color for the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 1rem; /* Set font size */
+    margin-left: 5px; /* Add margin to the left of the link */
+}
+
+.menu-new-playlist p {
+    margin: 0; /* Remove default margin */
+}
+.menu-feed i,
+.menu-playlist i,
+.menu-favs i,
+.menu-disc i,
+.menu-new-playlist i {
+    margin-right: 5px; /* Add margin to the right of the icons in the menu items */
+}
+
+/* <!-- main section --> */
+
+.main {
+    width: 60%; /* Set main div width */
+    background-color: black; /* Set main div background color */
+    padding: 20px; /* Add padding to main div */
+}
+
+.playlist-heading {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+ .playlist-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center items horizontally */
+}
+
+
+.playlist-item-content {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+
+.playlist-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.playlist-item {
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 4s ease infinite; /* Set animation to run infinitely */
+}
+
+.playlist-item:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+.playlist-item img {
+    width: auto; /* Allow image to adjust width */
+    height: 200px; /* Set fixed height */
+    max-width: calc(100% - 20px); /* Limit maximum width */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+    margin-bottom: 10px; /* Add space between image and anchor tag */
+}
+
+.stats {
+    width: 30%;
+    height: 50%;
+    background-color: black;
+    padding: 20px;
+    float: left; /* Add this line to float the stats div to the left */
+}
+.ptracks-container {
+    overflow-x: auto; /* Add horizontal scroll if the table is wider than its container */
+}
+
+table {
+    width: 100%; /* Make the table fill its container */
+    border-collapse: collapse; /* Collapse border spacing */
+    background-color: black; /* Set background color to black */
+}
+
+th, td {
+    padding: 8px; /* Add padding to cells */
+    text-align: left; /* Align text to the left */
+    color: white; /* Set font color to white */
+}
+th {
+    background-color: black; /* Background color for header cells */
+}
+
+tr:hover {
+    background-color: black; /* Background color on hover */
+    color: white; /* Set font color to white on hover */
+}
+
+/* Ensure each cell content is displayed properly */
+.stats table td {
+    vertical-align: middle; /* Align content vertically in the middle */
+}
+
+.stats table th,
+.stats table td {
+    padding: 8px; /* Add padding to cells */
+}
+
+/* Style for each cell content */
+.cell-content {
+    display: flex; /* Use flexbox to align image and text horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+/* Adjust the width and height of the images */
+.cell-content img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Add margin between image and text */
+}
+
+/* Style for table headers */
+.stats table th {
+    background-color: #333; /* Set background color for table headers */
+    color: white; /* Set text color for table headers */
+}
+
+/* Style for table rows */
+.stats table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Set background color for even rows */
+}
+
+.stats h2 {
+    color: white; /* Change the color to your desired color */
+}
+
+.stats table tr:hover img {
+    opacity: 0.5; /* Optional: Reduce opacity of the image on hover */
+}
+
+.stats table tr:hover img::after {
+    content: '\f04b'; /* Unicode for play icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the play button is above the image */
+}
+
+
+.favourite-artists {
+    width: 30%;
+    background-color: black;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.favourite-artists h3 {
+    color:  wheat; /* Set color for the heading */
+}
+
+.favourite-artists ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.favourite-artists li {
+    color: white; /* Set color for the list items */
+    font-size: 1rem; /* Set font size */
+    margin-bottom: 5px; /* Add spacing between list items */
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.stats,
+.favourite-artists {
+    width: 80%; /* Ensure both sections take up the full width */
+    background-color: black; /* Adjust background color */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin between sections */
+}
+/* Style for the "Favourite Artists" section */
+.favourite-artists {
+    width: 30%; /* Set width for the section */
+    background-color: black; /* Set background color */
+    padding: 20px; /* Add padding */
+    margin-left: 20px; /* Add margin from the previous section */
+}
+
+/* Style for the heading */
+.favourite-artists h3 {
+    color: orange; /* Set color for the heading */
+}
+
+/* Style for the table */
+.favourite-artists table {
+    width: 100%; /* Set table width to fill its container */
+}
+
+/* Style for table cells */
+.favourite-artists td {
+    padding: 8px; /* Add padding to cells */
+    color: white; /* Set color for text */
+}
+
+/* Style for images in the table */
+.favourite-artists img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Add margin between image and text */
+}
+
+.favourite-artists table tr:hover img {
+    opacity: 0.5; /* Optional: Reduce opacity of the image on hover */
+}
+
+.favourite-artists table tr:hover img::after {
+    content: '\f04b'; /* Unicode for play icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the play button is above the image */
+}
+
+/* Currently Playing Section */
+.currently-playing {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.song-details img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-info p {
+    font-size: 0.8rem;
+}
+
+.playback-controls button {
+    font-size: 16px;
+    margin: 0 3px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add hover effect to specific buttons */
+.playback-controls button:hover {
+    color: orange; /* Change text color to orange on hover */
+}
+
+/* Responsive Layout for iPhone 12 Pro */
+@media screen and (max-width: 428px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu,
+    .main {
+        width: 100%;
+        margin-top: 100px; /* Adjust according to the height of the navbar */
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu,
+    .main > * {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .stats,
+    .favourite-artists {
+        width: 100%;
+        margin-top: 20px; /* Add margin between the sections */
+    }
+}

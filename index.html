@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ech0 Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+
+    <header>
+    <div class="navbar">
+
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-home border">    
+            <i class="fa-solid fa-house"></i>
+            <p class="home"> <a href="#" style = "color: white"> Home </a> </p>
+           
+        </div>
+
+        <div class="nav-podcast border">
+            <i class="fa-solid fa-podcast"></i>
+            <a href="#" style = "color: white"> Podcasts </a>
+        </div>
+
+        <div class="nav-search">
+            <input placeholder="Search Music/Artist" class="search-input">
+            <div class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+        </div>
+
+       <div class="nav-Account border">
+            <i class="fa-regular fa-user"></i>
+            <a href="#" style="color: white"> Account </a>
+       </div>
+
+
+    </div>
+</header>
+
+<!-- main menu -->
+<div class="container">
+<div class="menu">
+    
+    <div class="menu-feed" style="margin-top: 20px;"> <!-- Add margin-top to create space -->
+        <i class="fa-solid fa-align-left"></i>
+        <p class="feed"> <a href="#"> Feed </a> </p>
+    </div>
+
+    <div class="menu-playlist">    
+        <i class="fa-solid fa-music"></i>
+        <p class="playlists"> <a href="#"> Playlists </a> </p>
+       
+    </div>
+    
+
+    <div class="menu-favs">    
+        <i class="fa-regular fa-heart"></i>
+        <p class="favourites"> <a href="#"> Favourites </a> </p>
+       
+    </div>
+   
+
+    <div class="menu-disc">    
+        <i class="fa-solid fa-bolt"></i>
+        <p class="discover-new"> <a href="#"> Discover New </a> </p>
+       
+    </div> 
+
+    <div class="menu-new-playlist">
+        <i class="fa-solid fa-plus"></i>
+        <p class="create-new-playlist"> <a href="#"> Create a new playlist </a> </p>
+    </div>
+</div>
+
+
+<!-- playlist -->
+<div class="main">
+    <div class="playlist-heading">YOUR PLAYLISTS</div>
+    <div class="playlist-items">
+        <div id="play1" class="playlist-item">
+            <div class="playlist-item-content">
+                <img src="pl1.jfif" alt="Playlist 1">
+                <a href="#" style="color: white;">THIS IS MUSIC</a>
+            </div>
+        </div>
+        <div id="play2" class="playlist-item">
+            <div class="playlist-item-content">
+                <img src="pl2.jfif" alt="Playlist 2">
+                <a href="#" style="color: white;">for your eyes only</a>
+            </div>
+        </div>
+        <div id="play3" class="playlist-item">
+            <div class="playlist-item-content">
+                <img src="pl3.jfif" alt="Playlist 3">
+                <a href="#" style="color: white;">music to scream in the car</a>
+            </div>
+        </div>
+        <div id="play4" class="playlist-item">
+            <div class="playlist-item-content">
+                <img src="PL5.jpg" alt="Playlist 4">
+                <a href="#" style="color: white;">we dont talk ab this</a>
+            </div>
+        </div>
+        <div id="play5" class="playlist-item">
+            <div class="playlist-item-content">
+                <img src="download.jfif" alt="Playlist 5">
+                <a href="#" style="color: white;">god how do i describe this feeling</a>
+            </div>
+        </div>
+        <div id="play6" class="playlist-item">
+            <div class="playlist-item-content">
+                <img src="CD.jfif" alt="Playlist 6">
+                <a href="#" style="color: white;">oh well</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- on loop-->
+<div class="additional-info">
+<div class="stats">
+    <div class="ptracks-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <img src="peacheyes.jfif" alt="Peach Eyes">
+                        </div>
+                        <div class="cell-content">peach eyes</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">wave to earth</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">15.6</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <img src="One Direction - Little Things.jfif" alt="Nobody Compares">
+                        </div>
+                        <div class="cell-content">Nobody Compares</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">One Direction</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">15</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <img src="hozier.jpg" alt="Too Sweet">
+                        </div>
+                        <div class="cell-content">Too Sweet</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">Hozier</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">14.8</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <img src="2soon.jfif" alt="2 Soon">
+                        </div>
+                        <div class="cell-content">2 soon</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">keshi</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">14</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell-content">
+                            <img src="Lorde.jfif" alt="California">
+                        </div>
+                        <div class="cell-content">California</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">Lorde</div>
+                    </td>
+                    <td>
+                        <div class="cell-content">12.7</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="favourite-artists">
+    <h3>Favourite Artists</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="1d.jpg" alt="One Direction">
+                </td>
+                <td>One Direction</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="wte.jpg" alt="Wave to Earth">
+                </td>
+                <td>wave to earth</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="ke.jpg" alt="keshi">
+                </td>
+                <td>keshi</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="hz.jpg" alt="Hozier">
+                </td>
+                <td>Hozier</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+</div>
+<!-- Currently Playing Section -->
+<div class="currently-playing">
+    <div class="song-details">
+        <img src="c.jpg" alt="Currently Playing Image">
+        <div class="song-info">
+            <p class="song-name">Its not living if its not with you</p>
+            <p class="artist-name">the 1975</p>
+        </div>
+    </div>
+    <div class="playback-controls">
+        <button class="rewind-btn"><i class="fas fa-backward"></i></button>
+        <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+        <button class="skip-btn"><i class="fas fa-forward"></i></button>
+    </div>
+</div>
+</div>
+
